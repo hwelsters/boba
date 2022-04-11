@@ -1,0 +1,678 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4786127487848759546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4786127487848759302}
+  - component: {fileID: 4786127487848759545}
+  - component: {fileID: 4786127487848759547}
+  m_Layer: 0
+  m_Name: mainCamera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4786127487848759302
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4786127487848759546}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7804020147542379933}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &4786127487848759545
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4786127487848759546}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 50
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 0
+  m_HDR: 0
+  m_AllowMSAA: 0
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 0
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!81 &4786127487848759547
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4786127487848759546}
+  m_Enabled: 1
+--- !u!1 &4786127488865250926
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7804020147542379933}
+  - component: {fileID: 1483725993940310407}
+  - component: {fileID: 4786127488865250927}
+  m_Layer: 0
+  m_Name: globals
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &7804020147542379933
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4786127488865250926}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4786127487848759302}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1483725993940310407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4786127488865250926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c182e1051ce2c048b09217b67d394fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemInfos:
+  - sprite: {fileID: 0}
+    name: 
+    description: 
+    meltTemperature: 0
+    meltItemType: 0
+    freezeTemperature: 0
+    freezeItemType: 0
+    initialFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 0
+  - sprite: {fileID: -4863336276314997047, guid: bd4518c12c9c2584d94fdb7f665eae2a,
+      type: 3}
+    name: fish egg
+    description: 'A black, gelatinous and squishy fish egg. It tastes sweet! Farmed
+      from natural and sustainable sources.
+
+      - Eggy-chan, Egg.inc''s mascot.'
+    meltTemperature: 500
+    meltItemType: 26
+    freezeTemperature: 0
+    freezeItemType: 0
+    initialFlavor:
+      spice: 0
+      sugar: 2
+      aroma: 1
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 0
+  - sprite: {fileID: -3860515135949180240, guid: bd4518c12c9c2584d94fdb7f665eae2a,
+      type: 3}
+    name: milk
+    description: Milk constitutes 50% of our galaxy. Drink the galaxy! -Milku inc.
+    meltTemperature: 0
+    meltItemType: 0
+    freezeTemperature: 0
+    freezeItemType: 0
+    initialFlavor:
+      spice: 0
+      sugar: 2
+      aroma: 0
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 0
+  - sprite: {fileID: -6734734834790175173, guid: bd4518c12c9c2584d94fdb7f665eae2a,
+      type: 3}
+    name: sugar
+    description: 'This item should only be ingested through the mouth!
+
+      - Food
+      Safety Association'
+    meltTemperature: 0
+    meltItemType: 0
+    freezeTemperature: 0
+    freezeItemType: 0
+    initialFlavor:
+      spice: 0
+      sugar: 5
+      aroma: 1
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 0
+  - sprite: {fileID: -6618134905481563395, guid: bd4518c12c9c2584d94fdb7f665eae2a,
+      type: 3}
+    name: brown sugar
+    description: 'It''s sugar... but brown? '
+    meltTemperature: 0
+    meltItemType: 0
+    freezeTemperature: 0
+    freezeItemType: 0
+    initialFlavor:
+      spice: 0
+      sugar: 4
+      aroma: 1
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 0
+  - sprite: {fileID: -3913403896141990040, guid: bd4518c12c9c2584d94fdb7f665eae2a,
+      type: 3}
+    name: honey
+    description: 
+    meltTemperature: 0
+    meltItemType: 0
+    freezeTemperature: 0
+    freezeItemType: 0
+    initialFlavor:
+      spice: 0
+      sugar: 5
+      aroma: 3
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 0
+  - sprite: {fileID: -1393458340566893849, guid: bd4518c12c9c2584d94fdb7f665eae2a,
+      type: 3}
+    name: cream
+    description: 
+    meltTemperature: 0
+    meltItemType: 0
+    freezeTemperature: 0
+    freezeItemType: 0
+    initialFlavor:
+      spice: 0
+      sugar: 3
+      aroma: 0
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 0
+  - sprite: {fileID: -3571245019227250870, guid: bd4518c12c9c2584d94fdb7f665eae2a,
+      type: 3}
+    name: ice
+    description: A cube of ice. Doesn't it seem fairly round for a cube?
+    meltTemperature: 273
+    meltItemType: 8
+    freezeTemperature: 0
+    freezeItemType: 0
+    initialFlavor:
+      spice: -1
+      sugar: -1
+      aroma: -1
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 0
+  - sprite: {fileID: 2451324180514708912, guid: bd4518c12c9c2584d94fdb7f665eae2a,
+      type: 3}
+    name: water
+    description: 
+    meltTemperature: 0
+    meltItemType: 0
+    freezeTemperature: 273
+    freezeItemType: 7
+    initialFlavor:
+      spice: -1
+      sugar: -1
+      aroma: -1
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 0
+  - sprite: {fileID: -5990679910767757089, guid: bd4518c12c9c2584d94fdb7f665eae2a,
+      type: 3}
+    name: jasmyng tea leaves
+    description: 
+    meltTemperature: 800
+    meltItemType: 27
+    freezeTemperature: 0
+    freezeItemType: 0
+    initialFlavor:
+      spice: 3
+      sugar: 0
+      aroma: 6
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 25
+  - sprite: {fileID: 5821263585957794077, guid: bd4518c12c9c2584d94fdb7f665eae2a,
+      type: 3}
+    name: ceylong tea leaves
+    description: 
+    meltTemperature: 800
+    meltItemType: 27
+    freezeTemperature: 0
+    freezeItemType: 0
+    initialFlavor:
+      spice: 4
+      sugar: 2
+      aroma: 7
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 25
+  - sprite: {fileID: -5948282585747812326, guid: bd4518c12c9c2584d94fdb7f665eae2a,
+      type: 3}
+    name: bolong tea leaves
+    description: 
+    meltTemperature: 800
+    meltItemType: 27
+    freezeTemperature: 0
+    freezeItemType: 0
+    initialFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 25
+  - sprite: {fileID: 276814819640733396, guid: bd4518c12c9c2584d94fdb7f665eae2a, type: 3}
+    name: paroot tea leaves
+    description: 
+    meltTemperature: 800
+    meltItemType: 27
+    freezeTemperature: 0
+    freezeItemType: 0
+    initialFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 25
+  - sprite: {fileID: -267251719090833575, guid: bd4518c12c9c2584d94fdb7f665eae2a,
+      type: 3}
+    name: jasmyng tea
+    description: 
+    meltTemperature: 800
+    meltItemType: 28
+    freezeTemperature: 0
+    freezeItemType: 0
+    initialFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 0
+  - sprite: {fileID: 184947299614187853, guid: bd4518c12c9c2584d94fdb7f665eae2a, type: 3}
+    name: ceylong tea
+    description: 
+    meltTemperature: 800
+    meltItemType: 0
+    freezeTemperature: 0
+    freezeItemType: 0
+    initialFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 0
+  - sprite: {fileID: 6552564986207930973, guid: bd4518c12c9c2584d94fdb7f665eae2a,
+      type: 3}
+    name: bolong tea
+    description: 
+    meltTemperature: 800
+    meltItemType: 28
+    freezeTemperature: 0
+    freezeItemType: 0
+    initialFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 0
+  - sprite: {fileID: -8362602881052143106, guid: bd4518c12c9c2584d94fdb7f665eae2a,
+      type: 3}
+    name: paroot tea
+    description: 
+    meltTemperature: 800
+    meltItemType: 28
+    freezeTemperature: 0
+    freezeItemType: 0
+    initialFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 0
+  - sprite: {fileID: -3202966353781376089, guid: bd4518c12c9c2584d94fdb7f665eae2a,
+      type: 3}
+    name: jasmyng milk tea
+    description: 
+    meltTemperature: 800
+    meltItemType: 29
+    freezeTemperature: 800
+    freezeItemType: 0
+    initialFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 0
+  - sprite: {fileID: 5717860663560468995, guid: bd4518c12c9c2584d94fdb7f665eae2a,
+      type: 3}
+    name: ceylong milk tea
+    description: 
+    meltTemperature: 800
+    meltItemType: 29
+    freezeTemperature: 0
+    freezeItemType: 0
+    initialFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 0
+  - sprite: {fileID: 8152852456837299576, guid: bd4518c12c9c2584d94fdb7f665eae2a,
+      type: 3}
+    name: bolong milk tea
+    description: 
+    meltTemperature: 800
+    meltItemType: 29
+    freezeTemperature: 0
+    freezeItemType: 0
+    initialFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 0
+  - sprite: {fileID: 9214527340654990288, guid: bd4518c12c9c2584d94fdb7f665eae2a,
+      type: 3}
+    name: paroot milk tea
+    description: 
+    meltTemperature: 800
+    meltItemType: 29
+    freezeTemperature: 0
+    freezeItemType: 0
+    initialFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 0
+  - sprite: {fileID: -3998773593875168313, guid: bd4518c12c9c2584d94fdb7f665eae2a,
+      type: 3}
+    name: jasmyng fish egg milk tea
+    description: 
+    meltTemperature: 800
+    meltItemType: 29
+    freezeTemperature: 0
+    freezeItemType: 0
+    initialFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 0
+  - sprite: {fileID: 2666837487265513188, guid: bd4518c12c9c2584d94fdb7f665eae2a,
+      type: 3}
+    name: ceylong fish egg milk tea
+    description: 
+    meltTemperature: 800
+    meltItemType: 29
+    freezeTemperature: 0
+    freezeItemType: 0
+    initialFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 0
+  - sprite: {fileID: -1160798593736239838, guid: bd4518c12c9c2584d94fdb7f665eae2a,
+      type: 3}
+    name: bolong fish egg milk tea
+    description: 
+    meltTemperature: 800
+    meltItemType: 29
+    freezeTemperature: 0
+    freezeItemType: 0
+    initialFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 0
+  - sprite: {fileID: -2761068690825735088, guid: bd4518c12c9c2584d94fdb7f665eae2a,
+      type: 3}
+    name: paroot fish egg milk tea
+    description: 
+    meltTemperature: 800
+    meltItemType: 29
+    freezeTemperature: 0
+    freezeItemType: 0
+    initialFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 0
+  - sprite: {fileID: -7162530431733920896, guid: bd4518c12c9c2584d94fdb7f665eae2a,
+      type: 3}
+    name: raw fish eggs
+    description: 
+    meltTemperature: 373
+    meltItemType: 1
+    freezeTemperature: 0
+    freezeItemType: 0
+    initialFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 0
+  - sprite: {fileID: 2173216817343420227, guid: bd4518c12c9c2584d94fdb7f665eae2a,
+      type: 3}
+    name: gunk
+    description: 
+    meltTemperature: 0
+    meltItemType: 0
+    freezeTemperature: 0
+    freezeItemType: 0
+    initialFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 0
+  - sprite: {fileID: 731597103121526280, guid: bd4518c12c9c2584d94fdb7f665eae2a, type: 3}
+    name: carbon
+    description: 
+    meltTemperature: 0
+    meltItemType: 0
+    freezeTemperature: 0
+    freezeItemType: 0
+    initialFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 0
+  - sprite: {fileID: -1164294437156975824, guid: bd4518c12c9c2584d94fdb7f665eae2a,
+      type: 3}
+    name: carbon tea
+    description: 
+    meltTemperature: 0
+    meltItemType: 0
+    freezeTemperature: 0
+    freezeItemType: 0
+    initialFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 0
+  - sprite: {fileID: 8459678078700780562, guid: bd4518c12c9c2584d94fdb7f665eae2a,
+      type: 3}
+    name: carbon milk tea
+    description: 
+    meltTemperature: 0
+    meltItemType: 0
+    freezeTemperature: 0
+    freezeItemType: 0
+    initialFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 0
+  - sprite: {fileID: -4818608432900340472, guid: bd4518c12c9c2584d94fdb7f665eae2a,
+      type: 3}
+    name: 
+    description: 
+    meltTemperature: 0
+    meltItemType: 0
+    freezeTemperature: 0
+    freezeItemType: 0
+    initialFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    perfectFlavor:
+      spice: 0
+      sugar: 0
+      aroma: 0
+    price: 0
+  mainCamera: {fileID: 4786127487848759545}
+  blockingLayer:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!114 &4786127488865250927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4786127488865250926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 218c7ff56fcaeb2429febe1dcd071b03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointerSprite: {fileID: 2800000, guid: 5b628bcd84269c54abc507a395a3e1d8, type: 3}
+  handSprite: {fileID: 2800000, guid: a2a8165d53858a44385c4cfa7c4ae0ea, type: 3}

@@ -1,0 +1,49 @@
+public enum ItemType
+{
+    NONE,
+    FISH_EGG,
+    MILK,
+    SUGAR,
+    BROWN_SUGAR,
+    HONEY,
+    CREAM,
+    ICE,
+    WATER,
+
+    JASMYNG_TEA_LEAVES,
+    CEYLONG_TEA_LEAVES,
+    BOLONG_TEA_LEAVES,
+    PAROOT_TEA_LEAVES,
+
+    JASMYNG_TEA,
+    CEYLONG_TEA,
+    BOLONG_TEA,
+    PAROOT_TEA,
+
+    JASMYNG_MILK_TEA,
+    CEYLONG_MILK_TEA,
+    BOLONG_MILK_TEA,
+    PAROOT_MILK_TEA,
+
+    JASMYNG_FISH_EGG_MILK_TEA,
+    CEYLONG_FISH_EGG_MILK_TEA,
+    BOLONG_FISH_EGG_MILK_TEA,
+    PAROOT_FISH_EGG_MILK_TEA,
+
+    RAW_FISH_EGGS,
+    GUNK,
+    CARBON,
+
+    CARBON_TEA,
+    CARBON_MILK_TEA,
+
+    ITEM_COUNT
+}
+
+public enum Direction
+{
+    UP,
+    DOWN,
+    LEFT,
+    RIGHT
+}

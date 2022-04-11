@@ -1,0 +1,18 @@
+1 > Customers path to tables
+
+2 > Customers create orders and can be served
+
+3 > Ingredients in inventory
+
+4 > Stock UI - show what ingredients player has in inventory
+
+5 > Allow player to customise shop with drag and drop
+
+---------------- finish! ----------------
+
+------------- stretch goals! ------------
+6 > Aged milk tea - price is doubled
+
+7 > Automate boba production
+
+8 > Food farms
