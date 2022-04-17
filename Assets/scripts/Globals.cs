@@ -51,8 +51,6 @@ public class Globals : MonoBehaviour
         {"MILK+CARBON_TEA", ItemType.CARBON_MILK_TEA}
     };
 
-    private const float COLLISION_RADIUS = 0.4f;
-
     // ROOM_TEMPERATURE CAN CHANGE BASED ON SEASON
     public static float ROOM_TEMPERATURE = 300f;
     public static Globals instance = null;
@@ -87,10 +85,10 @@ public class Globals : MonoBehaviour
         return instance.itemInfos[(int) itemType];
     }
 
-    public static T CheckCollision <T> (Vector2 position)
+    public static T CheckCollision <T> (Vector2 position, float collisionRadius)
         where T : Component
     {
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(position, COLLISION_RADIUS);
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(position, collisionRadius);
 
         foreach(Collider2D collider in colliders)
         {

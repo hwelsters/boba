@@ -4,28 +4,19 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
-    
-    protected bool mouseIsOver = false;
-
+    private const float INTERACTABLE_DISTANCE = 15f;
     protected void OnMouseOver()
     {
         CursorManager.SetToHand();
-        mouseIsOver = true;
     }
 
     protected void OnMouseExit()
     {
         CursorManager.SetToPointer();
-        mouseIsOver = false;
     }
 
-    protected bool WasRightClicked()
+    public bool PlayerIsCloseEnough() 
     {
-        return mouseIsOver && Input.GetMouseButtonDown(1);
-    }
-
-    protected bool WasLeftClicked()
-    {
-        return mouseIsOver && Input.GetMouseButtonDown(0);
+        return Globals.CheckCollision<PlayerMovement>(transform.position, INTERACTABLE_DISTANCE) != null;
     }
 }

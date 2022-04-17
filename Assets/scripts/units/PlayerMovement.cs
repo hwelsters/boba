@@ -8,6 +8,7 @@ public class PlayerMovement : Storage
     private const float WALK_SPEED = 20f;
     private const float POINTER_DISTANCE = 5f;
     private const float OBJ_INTERACTABLE_SQR_DISTANCE = 0.75f;
+    private const float COLLISION_RADIUS = 0.4f;
 
     private Animator animator;
     private Rigidbody2D rb2D;
@@ -19,6 +20,7 @@ public class PlayerMovement : Storage
 
     private bool pressedZ = false;
     private bool pressedX = false;
+    private bool rightClicked = false;
 
     protected override void Start()
     {
@@ -54,9 +56,18 @@ public class PlayerMovement : Storage
         pressedZ = Input.GetKeyDown(KeyCode.Z);
         pressedX = Input.GetKeyDown(KeyCode.X);
 
+        rightClicked = Input.GetMouseButtonDown(1);
+
         //DELETE
         if (pressedZ)
-            WithdrawItem(moveX, moveY);
+        {
+            WithdrawItem(pointerPosition.x, pointerPosition.y);
+        }
+        else if (rightClicked)
+        {
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            WithdrawItem(mousePosition.x, mousePosition.y);
+        }
         //DELETE
     }
 
@@ -83,10 +94,11 @@ public class PlayerMovement : Storage
     }
 
     //DELETE
-    private void WithdrawItem(int moveX, int moveY)
+    private void WithdrawItem(float xPos, float yPos)
     {
-        Storage storage = Globals.CheckCollision<Storage>(pointerPosition);
-        if (storage != null)
+        Storage storage = Globals.CheckCollision<Storage>(new Vector2(xPos, yPos), COLLISION_RADIUS );
+        // DELETE
+        if (storage != null && storage.PlayerIsCloseEnough())
         {
             if (storedItem.itemType == ItemType.NONE) storage.WithdrawItem(storedItem);
             else storage.StoreItem(storedItem);
