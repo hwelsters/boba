@@ -48,7 +48,15 @@ public class Globals : MonoBehaviour
         {"FISH_EGG+PAROOT_MILK_TEA", ItemType.PAROOT_FISH_EGG_MILK_TEA},
 
         {"WATER+CARBON", ItemType.CARBON_TEA},
-        {"MILK+CARBON_TEA", ItemType.CARBON_MILK_TEA}
+        {"MILK+CARBON_TEA", ItemType.CARBON_MILK_TEA},
+
+        {"MILK+WATER", ItemType.MILK_WATER},
+        {"FISH_EGG+MILK_WATER", ItemType.FISH_EGG_MILK},
+        
+        {"JASMYNG_TEA_LEAVES+MILK_WATER", ItemType.JASMYNG_MILK_TEA},
+        {"CEYLONG_TEA_LEAVES+MILK_WATER", ItemType.CEYLONG_MILK_TEA},
+        {"BOLONG_TEA_LEAVES+MILK_WATER", ItemType.BOLONG_MILK_TEA},
+        {"PAROOT_TEA_LEAVES+MILK_WATER", ItemType.PAROOT_MILK_TEA}
     };
 
     // ROOM_TEMPERATURE CAN CHANGE BASED ON SEASON
@@ -105,7 +113,6 @@ public class Globals : MonoBehaviour
     public static string ConvertToKey(ItemType[] itemTypes)
     {
         Array.Sort(itemTypes, 0, itemTypes.Length);
-
         string ret = "";
         
         for (int i = 0; i < itemTypes.Length - 1; i++)

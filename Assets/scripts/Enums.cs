@@ -37,6 +37,9 @@ public enum ItemType
     CARBON_TEA,
     CARBON_MILK_TEA,
 
+    MILK_WATER,
+    FISH_EGG_MILK,
+
     ITEM_COUNT
 }
 
