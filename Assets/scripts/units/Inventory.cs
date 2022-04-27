@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public static class Inventory
 {
     private static List<Item> items = new List<Item>();
-    private static int playerMoney = 10000;
+    private static int playerMoney = 0;
 
     public delegate void OnChangeHandler();
     public static event OnChangeHandler OnChange;
@@ -52,6 +52,12 @@ public static class Inventory
         playerMoney -= amountToWithdraw;
         
         Debug.Log("Player Money: " + playerMoney);
+        return true;
+    }
+
+    public static bool DepositMoney(int amountToDeposit) 
+    {
+        playerMoney += amountToDeposit;
         return true;
     }
 

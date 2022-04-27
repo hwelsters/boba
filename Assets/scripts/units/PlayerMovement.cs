@@ -6,9 +6,9 @@ public class PlayerMovement : Storage
 {
     //DEFINITELY SHOULD CLEAN UP THIS CODE SOMEDAY
     private const float WALK_SPEED = 20f;
-    private const float POINTER_DISTANCE = 5f;
+    private const float POINTER_DISTANCE = 2.5f;
     private const float OBJ_INTERACTABLE_SQR_DISTANCE = 0.75f;
-    private const float COLLISION_RADIUS = 0.4f;
+    private const float COLLISION_RADIUS = 0.1f;
 
     private Animator animator;
     private Rigidbody2D rb2D;

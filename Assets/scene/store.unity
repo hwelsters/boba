@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.13333334, g: 0.14901961, b: 0.20784314, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -293,7 +293,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &386864798
 Transform:
   m_ObjectHideFlags: 0
@@ -411,7 +411,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
     oldSize: {x: 8, y: 10}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 8, y: 10}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1184,7 +1184,7 @@ PrefabInstance:
     - target: {fileID: 4206535821643738142, guid: b4026a0e97ae13d468b516d24acd7231,
         type: 3}
       propertyPath: drinkOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7024041985952443961, guid: b4026a0e97ae13d468b516d24acd7231,
         type: 3}
