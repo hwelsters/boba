@@ -43,7 +43,7 @@ MonoBehaviour:
   - {fileID: -5336413158813440611, guid: 0b22e968e6fffb94e8ca50c8cb157469, type: 3}
   - {fileID: -8432999115085641909, guid: 0b22e968e6fffb94e8ca50c8cb157469, type: 3}
   - {fileID: -4437112166288746331, guid: 0b22e968e6fffb94e8ca50c8cb157469, type: 3}
-  maxCount: 5
+  maxCount: 3
   offset: {x: 0, y: 10}
   temperatureChangeRate: 1
   temperatureToApproach: 300
